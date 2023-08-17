@@ -1,0 +1,14 @@
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\obj\Debug\net6.0\Delegation.GeneratedMSBuildEditorConfig.editorconfig
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\obj\Debug\net6.0\Delegation.AssemblyInfoInputs.cache
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\obj\Debug\net6.0\Delegation.AssemblyInfo.cs
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\obj\Debug\net6.0\Delegation.csproj.CoreCompileInputs.cache
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\bin\Debug\net6.0\Delegation.exe
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\bin\Debug\net6.0\Delegation.deps.json
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\bin\Debug\net6.0\Delegation.runtimeconfig.json
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\bin\Debug\net6.0\Delegation.dll
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\bin\Debug\net6.0\Delegation.pdb
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\obj\Debug\net6.0\Delegation.dll
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\obj\Debug\net6.0\refint\Delegation.dll
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\obj\Debug\net6.0\Delegation.pdb
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\obj\Debug\net6.0\Delegation.genruntimeconfig.cache
+G:\WORK\Java\SWE4302_OOP_2\Lab02\Delegation\Delegation\obj\Debug\net6.0\ref\Delegation.dll
