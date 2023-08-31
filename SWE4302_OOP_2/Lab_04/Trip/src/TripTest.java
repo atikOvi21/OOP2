@@ -3,15 +3,15 @@ import org.junit.Test;
 
 public class TripTest {
 
-    // For The basic Trip class with Switch Cases
+// For The basic Trip class with Switch Cases
 //    private final Trip sedanTrip = new Trip(VehicleType.SEDAN, 30, 40, 3);
 //    private final Trip bikeTrip = new Trip(VehicleType.MOTOR_BIKE, 20, 20, 2);
 //    private final Trip sevenSeaterTrip = new Trip(VehicleType.SEVEN_SEATER, 50, 40, 7);
 
-    // For the refactored Trip class with Polymorphism
+// For the refactored Trip class with Polymorphism
     private final SedanTrip sedanTrip = new SedanTrip(VehicleType.SEDAN,30, 40, 3);
     private final MotorBikeTrip bikeTrip = new MotorBikeTrip(VehicleType.MOTOR_BIKE, 20, 20, 2);
-     private final SevenSeaterTrip sevenSeaterTrip = new SevenSeaterTrip(VehicleType.SEVEN_SEATER, 50, 40, 7);
+    private final SevenSeaterTrip sevenSeaterTrip = new SevenSeaterTrip(VehicleType.SEVEN_SEATER, 50, 40, 7);
 
 
     // Test Cases for the perHeadFare() method
