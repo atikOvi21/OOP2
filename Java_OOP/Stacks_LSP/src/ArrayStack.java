@@ -1,7 +1,7 @@
 public class ArrayStack<T> implements Stack<T> {
-    private T[] array;
+    private final T[] array;
     private int size;
-    private int capacity;
+    private final int capacity;
 
     public ArrayStack(int capacity) {
         this.capacity = capacity;
