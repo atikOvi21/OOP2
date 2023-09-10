@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class accountManagerTest {
+public class AccountManagerTest {
 
     @Test
     public void Test(){}
