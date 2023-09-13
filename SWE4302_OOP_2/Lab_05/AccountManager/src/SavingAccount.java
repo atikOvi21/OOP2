@@ -1,4 +1,4 @@
-public class SavingAccount extends Account{
+public class SavingAccount extends Account implements IAccount{
     public SavingAccount(int accountNumber, double balance, String accountHolderName, String signature) {
         super(accountNumber, balance, accountHolderName, signature);
     }
@@ -21,5 +21,12 @@ public class SavingAccount extends Account{
         } else {
             super.withdraw(amount);
         }
+    }
+
+    @Override
+    public double getInterest() {
+        double interest = super.balance * 0.10;
+        super.balance += interest;
+        return interest;
     }
 }

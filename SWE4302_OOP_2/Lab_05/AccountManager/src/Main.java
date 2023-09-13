@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Account savingAccount = new SavingAccount(210032, 25000, "Hasin", "Hasin");
-        Account currentAccount = new CurrentAccount(329943, 30000, "Mahtab", "Mahtab");
+        SavingAccount savingAccount = new SavingAccount(210032, 25000, "Hasin", "Hasin");
+        CurrentAccount currentAccount = new CurrentAccount(329943, 30000, "Mahtab", "Mahtab");
+        IslamicAccount islamicAccount = new IslamicAccount(774322, 20000, "Alvee", "Alvee");
 
         try {
             savingAccount.withdraw(16000);
@@ -51,8 +52,36 @@ public class Main {
             System.out.println("Error: " + ex.getMessage());
         }
 
+        try{
+            islamicAccount.withdraw(12000);
+        } catch(UnsupportedException ex){
+            System.out.println("Error: " + ex.getMessage());
+        }
+
+        try{
+            islamicAccount.deposit(100);
+        } catch(UnsupportedException ex){
+            System.out.println("Error: " + ex.getMessage());
+        }
+
+        try{
+            islamicAccount.withdraw(9000);
+        } catch(UnsupportedException ex){
+            System.out.println("Error: " + ex.getMessage());
+        }
+
+        try{
+            islamicAccount.deposit(600);
+        } catch(UnsupportedException ex){
+            System.out.println("Error: " + ex.getMessage());
+        }
+
         System.out.println("Saving Account Balance: " + savingAccount.getBalance());
         System.out.println("Current Account Balance: " + currentAccount.getBalance());
+        System.out.println("Islamic Account Balance: " + islamicAccount.getBalance());
+
+        System.out.println("Saving Account Interest: " + savingAccount.getInterest());
+        System.out.println("Current Account Interest: " + currentAccount.getInterest());
 
     }
 }

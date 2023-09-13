@@ -4,8 +4,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class AccountManagerTest {
-    Account savingAccount = new SavingAccount(210032, 25000.0, "Hasin", "Hasin");
-    Account currentAccount = new CurrentAccount(329943, 30000.0, "Mahtab", "Mahtab");
+    SavingAccount savingAccount = new SavingAccount(210032, 25000.0, "Hasin", "Hasin");
+    CurrentAccount currentAccount = new CurrentAccount(329943, 30000.0, "Mahtab", "Mahtab");
+    IslamicAccount islamicAccount = new IslamicAccount(774322, 20000, "Alvee", "Alvee");
 
     @Test
     public void testSavingValidWithdraw() {
@@ -93,6 +94,64 @@ public class AccountManagerTest {
         } catch (UnsupportedException e) {
             assertEquals("Minimum deposit limit 500", e.getMessage());
         }
+    }
+
+    @Test
+    public void testIslamicValidWithdraw() {
+        try {
+            islamicAccount.withdraw(9000);
+            double expected = 11000.0;
+            double result = islamicAccount.getBalance();
+            assertEquals(expected, result, 0.0);
+        } catch (UnsupportedException e) {
+            fail("Unexpected UnsupportedException");
+        }
+    }
+
+    @Test
+    public void testIslamicInvalidWithdraw() {
+        try {
+            islamicAccount.withdraw(12000);
+            fail("Expected UnsupportedException");
+        } catch (UnsupportedException e) {
+            assertEquals("Maximum withdrawal limit 10000", e.getMessage());
+        }
+    }
+
+    @Test
+    public void testIslamicValidDeposit() {
+        try {
+            islamicAccount.deposit(600);
+            double expected = 20600.0;
+            double result = islamicAccount.getBalance();
+            assertEquals(expected, result, 0.0);
+        } catch (UnsupportedException e) {
+            fail("Unexpected UnsupportedException");
+        }
+    }
+
+    @Test
+    public void testIslamicInvalidDeposit() {
+        try {
+            islamicAccount.deposit(100);
+            fail("Expected UnsupportedException");
+        } catch (UnsupportedException e) {
+            assertEquals("Minimum deposit limit 200", e.getMessage());
+        }
+    }
+
+    @Test
+    public void testSavingValidInterest() {
+        double expected = 2500.0;
+        double result = savingAccount.getInterest();
+        assertEquals(expected, result, 0.0);
+    }
+
+    @Test
+    public void testCurrentValidInterest() {
+        double expected = 2400.0;
+        double result = currentAccount.getInterest();
+        assertEquals(expected, result, 0.0);
     }
 
 }

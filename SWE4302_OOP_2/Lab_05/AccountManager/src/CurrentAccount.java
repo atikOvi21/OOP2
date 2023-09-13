@@ -1,4 +1,4 @@
-public class CurrentAccount extends Account {
+public class CurrentAccount extends Account implements IAccount{
     public CurrentAccount(int accountNumber, double balance, String accountHolderName, String signature) {
         super(accountNumber, balance, accountHolderName, signature);
     }
@@ -21,5 +21,12 @@ public class CurrentAccount extends Account {
         } else {
             super.withdraw(amount);
         }
+    }
+
+    @Override
+    public double getInterest() {
+        double interest = balance * 0.08;
+        super.balance += interest;
+        return interest;
     }
 }
