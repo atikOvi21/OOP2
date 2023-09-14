@@ -6,7 +6,7 @@ import static org.junit.Assert.fail;
 public class AccountManagerTest {
     SavingAccount savingAccount = new SavingAccount(210032, 25000.0, "Hasin", "Hasin");
     CurrentAccount currentAccount = new CurrentAccount(329943, 30000.0, "Mahtab", "Mahtab");
-    IslamicAccount islamicAccount = new IslamicAccount(774322, 20000, "Alvee", "Alvee");
+    IslamicAccount islamicAccount = new IslamicAccount(774322, 20000.0, "Alvee", "Alvee");
 
     @Test
     public void testSavingValidWithdraw() {
