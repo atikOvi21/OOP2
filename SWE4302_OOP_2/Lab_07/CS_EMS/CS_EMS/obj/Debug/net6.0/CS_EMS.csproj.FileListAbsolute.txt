@@ -1,0 +1,14 @@
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\bin\Debug\net6.0\CS_EMS.exe
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\bin\Debug\net6.0\CS_EMS.deps.json
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\bin\Debug\net6.0\CS_EMS.runtimeconfig.json
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\bin\Debug\net6.0\CS_EMS.dll
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\bin\Debug\net6.0\CS_EMS.pdb
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\obj\Debug\net6.0\CS_EMS.GeneratedMSBuildEditorConfig.editorconfig
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\obj\Debug\net6.0\CS_EMS.AssemblyInfoInputs.cache
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\obj\Debug\net6.0\CS_EMS.AssemblyInfo.cs
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\obj\Debug\net6.0\CS_EMS.csproj.CoreCompileInputs.cache
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\obj\Debug\net6.0\CS_EMS.dll
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\obj\Debug\net6.0\refint\CS_EMS.dll
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\obj\Debug\net6.0\CS_EMS.pdb
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\obj\Debug\net6.0\CS_EMS.genruntimeconfig.cache
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\CS_EMS\obj\Debug\net6.0\ref\CS_EMS.dll
