@@ -1,0 +1,14 @@
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\obj\Debug\net6.0\CS_EMS_Better.GeneratedMSBuildEditorConfig.editorconfig
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\obj\Debug\net6.0\CS_EMS_Better.AssemblyInfoInputs.cache
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\obj\Debug\net6.0\CS_EMS_Better.AssemblyInfo.cs
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\obj\Debug\net6.0\CS_EMS_Better.csproj.CoreCompileInputs.cache
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\bin\Debug\net6.0\CS_EMS_Better.exe
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\bin\Debug\net6.0\CS_EMS_Better.deps.json
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\bin\Debug\net6.0\CS_EMS_Better.runtimeconfig.json
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\bin\Debug\net6.0\CS_EMS_Better.dll
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\bin\Debug\net6.0\CS_EMS_Better.pdb
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\obj\Debug\net6.0\CS_EMS_Better.dll
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\obj\Debug\net6.0\refint\CS_EMS_Better.dll
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\obj\Debug\net6.0\CS_EMS_Better.pdb
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\obj\Debug\net6.0\CS_EMS_Better.genruntimeconfig.cache
+G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS_Better\CS_EMS_Better\obj\Debug\net6.0\ref\CS_EMS_Better.dll

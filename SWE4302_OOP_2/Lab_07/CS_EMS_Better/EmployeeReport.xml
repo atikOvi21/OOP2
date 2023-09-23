@@ -2,26 +2,26 @@
 <EmployeeData>
   <Employee>
     <Name>John Doe</Name>
-    <BasicSalary>5000</BasicSalary>
+    <BasicSalary>0</BasicSalary>
     <Bonus>1000</Bonus>
     <Designation>Engineer</Designation>
     <DateOfJoining>2023-09-21T00:00:00</DateOfJoining>
-    <TotalSalary>6000</TotalSalary>
+    <TotalSalary>9000</TotalSalary>
   </Employee>
   <Employee>
     <Name>Jane Smith</Name>
-    <BasicSalary>6000</BasicSalary>
+    <BasicSalary>0</BasicSalary>
     <Bonus>1200</Bonus>
     <Designation>Manager</Designation>
     <DateOfJoining>2021-08-22T00:00:00</DateOfJoining>
-    <TotalSalary>7200</TotalSalary>
+    <TotalSalary>9600</TotalSalary>
   </Employee>
   <Employee>
     <Name>Bob</Name>
-    <BasicSalary>30000</BasicSalary>
+    <BasicSalary>0</BasicSalary>
     <Bonus>0</Bonus>
     <Designation>Worker</Designation>
-    <DateOfJoining>2023-09-23T10:22:39.1508344+06:00</DateOfJoining>
-    <TotalSalary>48000</TotalSalary>
+    <DateOfJoining>2023-09-23T11:21:18.3767533+06:00</DateOfJoining>
+    <TotalSalary>18000</TotalSalary>
   </Employee>
 </EmployeeData>

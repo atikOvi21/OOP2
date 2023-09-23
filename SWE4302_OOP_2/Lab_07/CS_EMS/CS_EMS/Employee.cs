@@ -69,7 +69,7 @@ namespace CS_EMS
         {
             EmployeeController employeeController = new EmployeeController();
             Console.WriteLine(employeeController.GetAllEmployees().Count);
-            string outputPath = @"G:\WORK\Java\SWE4302_OOP_2\Lab_07\EmployeeReport.xml"; ;
+            string outputPath = @"G:\WORK\Java\SWE4302_OOP_2\Lab_07\CS_EMS\EmployeeReport.xml";
 
             Console.WriteLine(outputPath);
             GenerateEmployeeXMLReport(employeeController.GetAllEmployees(), outputPath);
