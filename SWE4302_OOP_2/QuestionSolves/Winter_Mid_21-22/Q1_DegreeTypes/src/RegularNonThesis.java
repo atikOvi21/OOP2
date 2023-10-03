@@ -1,6 +1,4 @@
 public class RegularNonThesis extends MastersProgram implements IEligibility, IMarks{
-    private final DegreeType degreeType = DegreeType.RegularNonThesis;
-
     public RegularNonThesis(String major) {
         super(major);
     }

@@ -1,6 +1,4 @@
 public class Executive extends MastersProgram implements IEligibility, IMarks{
-    private final DegreeType degreeType = DegreeType.Executive;
-
     public Executive(String major) {
         super(major);
     }

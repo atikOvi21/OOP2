@@ -1,6 +1,4 @@
 public class RegularThesis extends MastersProgram implements IEligibility, IMarks{
-    private final DegreeType degreeType = DegreeType.RegularThesis;
-
     public RegularThesis(String major) {
         super(major);
     }
