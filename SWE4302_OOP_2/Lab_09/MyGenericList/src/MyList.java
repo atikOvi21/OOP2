@@ -8,13 +8,11 @@ public class MyList<T> {
     }
 
     private void extendList(){
-        if(isFull()){
-            T[] temp = (T[]) new Object[items.length * 2];
-            for (int i = 0; i < items.length; i++) {
-                temp[i] = items[i];
-            }
-            items = temp;
+        T[] temp = (T[]) new Object[items.length * 2];
+        for (int i = 0; i < items.length; i++) {
+            temp[i] = items[i];
         }
+        items = temp;
     }
 
     private boolean isFull() {
@@ -22,8 +20,12 @@ public class MyList<T> {
     }
 
     public void addItem(T elt) {
-        items[size] = elt;
-        size++;
+        if(isFull()){
+            extendList();
+        } else {
+            items[size] = elt;
+            size++;
+        }
     }
 
     public T getItem(int index) {
