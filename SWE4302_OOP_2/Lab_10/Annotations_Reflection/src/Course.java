@@ -1,6 +1,3 @@
-import DevelopmentHistory;
-import DevelopmentHistoryWithReviewer;
-
 @DevelopmentHistory
 public class Course {
     private final String code;
