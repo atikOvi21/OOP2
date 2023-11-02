@@ -1,6 +1,7 @@
 package ProductComparator;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -15,7 +16,7 @@ public class Main {
             System.out.println(product.getName() + " " + product.getPrice());
         }
 
-        ProductComparator productComparator = new ProductComparator();
+        Comparator<Product> productComparator = new ProductComparator();
         products.sort(productComparator);
         System.out.println("After sorting:");
         for (Product product : products){
