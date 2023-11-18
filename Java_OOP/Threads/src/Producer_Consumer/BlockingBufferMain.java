@@ -3,7 +3,7 @@ package Producer_Consumer;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ABQMain {
+public class BlockingBufferMain {
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newCachedThreadPool();
         Buffer sharedLocation = new BlockingBuffer();
