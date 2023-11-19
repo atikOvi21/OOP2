@@ -10,28 +10,28 @@ public class CircularBuffer implements Buffer{
     @Override
     public synchronized void set(int value) throws InterruptedException {
         while(occupiedCells == buffer.length) {
-            System.out.println("All cells full. Producer waits.");
+            System.out.println("All cells full. LockProducer waits.");
             wait();
         }
 
         buffer[writeIndex] = value;
         writeIndex = (writeIndex + 1) % buffer.length;
         ++occupiedCells;
-        displayState("Producer writes " + value);
+        displayState("LockProducer writes " + value);
         notifyAll();
     }
 
     @Override
     public synchronized int get() throws InterruptedException {
         while(occupiedCells == 0) {
-            System.out.println("All cells empty. Consumer waits.");
+            System.out.println("All cells empty. LockConsumer waits.");
             wait();
         }
 
         int readValue = buffer[readIndex];
         readIndex = (readIndex + 1) % buffer.length;
         --occupiedCells;
-        displayState("Consumer reads " + readValue);
+        displayState("LockConsumer reads " + readValue);
         notifyAll();
 
         return readValue;

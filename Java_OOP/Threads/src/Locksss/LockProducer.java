@@ -1,13 +1,13 @@
-package Producer_Consumer;
+package Locksss;
 
 import java.util.Random;
 import java.util.random.RandomGenerator;
 
-public class Producer implements Runnable{
+public class LockProducer implements Runnable{
     private final static RandomGenerator generator = new Random();
     private final Buffer sharedLocation;
 
-    public Producer(Buffer sharedLocation) {
+    public LockProducer(Buffer sharedLocation) {
         this.sharedLocation = sharedLocation;
     }
 

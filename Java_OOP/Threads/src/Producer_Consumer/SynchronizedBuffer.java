@@ -7,14 +7,14 @@ public class SynchronizedBuffer implements Buffer {
     @Override
     public synchronized void set(int value) throws InterruptedException {
         while (occupied) {
-            System.out.println(STR."Producer tries to write.");
-            displayState("Buffer full. Producer waits.");
+            System.out.println(STR."LockProducer tries to write.");
+            displayState("Buffer full. LockProducer waits.");
             wait();
         }
 
         buffer = value;
         occupied = true;
-        displayState("Producer writes " + buffer);
+        displayState("LockProducer writes " + buffer);
         notifyAll();
     }
 
@@ -23,14 +23,14 @@ public class SynchronizedBuffer implements Buffer {
         int readValue = 0;
 
         while (!occupied) {
-            System.out.println(STR."Consumer tries to read.");
-            displayState("Buffer empty. Consumer waits.");
+            System.out.println(STR."LockConsumer tries to read.");
+            displayState("Buffer empty. LockConsumer waits.");
             wait();
         }
 
         occupied = false;
         readValue = buffer;
-        displayState("Consumer reads " + readValue);
+        displayState("LockConsumer reads " + readValue);
         notifyAll();
 
         return readValue;
