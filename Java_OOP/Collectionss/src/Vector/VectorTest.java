@@ -19,7 +19,7 @@ public class VectorTest {
             System.out.printf("First element: %s\n", vector.firstElement());
             System.out.printf("Last element: %s\n", vector.lastElement());
         } catch (NoSuchElementException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         if (vector.contains("red")) {

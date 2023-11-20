@@ -1,5 +1,6 @@
 package Properties;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -51,7 +52,7 @@ public class PropertiesT {
 
     private void loadProperties(){
         try{
-            table.load(new java.io.FileInputStream("props.dat"));
+            table.load(new FileInputStream("props.dat"));
             System.out.println("After loading properties:");
             listProperties();
         } catch (IOException e) {

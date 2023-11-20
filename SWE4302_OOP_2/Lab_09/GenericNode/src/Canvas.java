@@ -1,10 +1,10 @@
 public class Canvas {
 
-    public void addShapeE(Node<? extends Shape_2D> shape){
+    public void addShapeE(Node<? extends Shape_2D> shape){ // Upper bound
         System.out.println("Adding shape: " + shape.getData().getName());
     }
 
-    public void addShapeS(Node<? super Shape_3D> shape){
+    public void addShapeS(Node<? super Shape_3D> shape){ // Lower bound
         System.out.println("Adding shape: " + shape.getData().getName());
     }
 

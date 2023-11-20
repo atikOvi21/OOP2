@@ -1,5 +1,7 @@
 package PersonLamda;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         SocialNetwork socialNetwork = new SocialNetwork();
@@ -7,15 +9,8 @@ public class Main {
 
         System.out.println("-------------------------------------------");
 
-        for (Person p:
-                socialNetwork.friendList) {
-            System.out.println(p);
-        }
-
-        System.out.println("-------------------------------------------");
-
         System.out.println("Sorted list by age: ");
-        socialNetwork.sortFriendList();
-//        socialNetwork.friendList.forEach( p -> System.out.println(p));
+        List<Person> sortedList = socialNetwork.sortFriendList();
+        sortedList.forEach( p -> System.out.println(p));
     }
 }

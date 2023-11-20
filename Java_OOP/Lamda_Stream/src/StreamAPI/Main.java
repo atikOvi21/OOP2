@@ -23,7 +23,7 @@ public class Main {
 
 
         // REDUCE
-        int even = numbers.stream().filter(x->x%2==0).reduce(0, (ans, i) -> ans - i);
+        int even = numbers.stream().filter(x->x%2==0).reduce(0, (ans, i) -> ans + i);
         System.out.println(even);
 
 

@@ -28,7 +28,7 @@ public class Person {
     }
 
     public static int compareByAge(Person a, Person b) {
-        return a.birthday.compareTo(b.birthday);
+        return Integer.compare(a.getAge(), b.getAge());
     }
 
     @Override

@@ -21,7 +21,7 @@ public class SocialNetwork {
         }};
     }
 
-    public void sortFriendList(){
+    public List<Person> sortFriendList(){
         Person[] friendsAsArray = friendList.toArray(new Person[friendList.size()]);
 //        Arrays.sort(friendsAsArray, new PersonAgeComparator());
 //
@@ -36,7 +36,6 @@ public class SocialNetwork {
         );
 
         //Arrays.sort(friendsAsArray, Person::compareByAge);
-        List<Person> sortList = Arrays.asList(friendsAsArray);
-        sortList.forEach( p -> System.out.println(p));
+        return Arrays.asList(friendsAsArray);
     }
 }

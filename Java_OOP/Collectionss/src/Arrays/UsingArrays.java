@@ -3,8 +3,8 @@ package Arrays;
 import java.util.Arrays;
 
 public class UsingArrays {
-    private int[] intArray = {1, 2, 3, 4, 5};
-    private double[] doubleArray = {8.4, 9.3, 0.2, 7.9, 3.4};
+    private final int[] intArray = {1, 2, 3, 4, 5};
+    private final double[] doubleArray = {8.4, 9.3, 0.2, 7.9, 3.4};
     private int[] filledIntArray;
     private int[] intArrayCopy;
 
