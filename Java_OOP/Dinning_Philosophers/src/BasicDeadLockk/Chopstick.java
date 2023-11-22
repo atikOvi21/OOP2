@@ -1,4 +1,4 @@
-package DeadLockk;
+package BasicDeadLockk;
 
 import java.util.concurrent.Semaphore;
 

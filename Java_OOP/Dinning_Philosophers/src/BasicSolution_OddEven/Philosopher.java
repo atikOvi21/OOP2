@@ -1,4 +1,4 @@
-package DeadLockk;
+package BasicSolution_OddEven;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -20,7 +20,7 @@ public class Philosopher implements Runnable{
 
     @Override
     public void run() {
-        while (true) {
+        for (int i = 0; i < 5; i++) {
             performAction("Thinking");
             leftChopstick.grabChopstick();
             System.out.println(STR."Philosopher \{id}: Picked up left chopstick.");

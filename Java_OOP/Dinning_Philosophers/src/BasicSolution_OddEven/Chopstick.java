@@ -1,4 +1,4 @@
-package Odd_Even;
+package BasicSolution_OddEven;
 
 import java.util.concurrent.Semaphore;
 

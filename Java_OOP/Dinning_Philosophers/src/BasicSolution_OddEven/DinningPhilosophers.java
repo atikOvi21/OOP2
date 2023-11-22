@@ -1,4 +1,4 @@
-package Odd_Even;
+package BasicSolution_OddEven;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

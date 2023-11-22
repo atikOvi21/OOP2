@@ -1,4 +1,4 @@
-package Odd_Even;
+package BasicDeadLockk;
 
 import java.util.concurrent.ThreadLocalRandom;
 
