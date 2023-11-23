@@ -8,7 +8,7 @@ public class Main {
         int numWaiters = 1;
         int numCustomersToServe = 5;
 
-        List<String> menuItems = List.of("Burger", "Pizza", "Pasta", "Salad", "Steak");
+        List<String> menuItems = List.of("Burger", "Pizza", "Pasta");
         Menu menu = new Menu(menuItems);
 
         SharedQueue<String> orderQueue = new OrderQueue(5);
