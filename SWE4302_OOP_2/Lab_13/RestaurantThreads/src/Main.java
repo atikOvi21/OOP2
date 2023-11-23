@@ -6,34 +6,35 @@ public class Main {
         int numTables = 6;
         int numChefs = 2;
         int numWaiters = 1;
-        int numCustomersToServe = 2;
+        int numCustomersToServe = 5;
 
         List<String> menuItems = List.of("Burger", "Pizza", "Pasta", "Salad", "Steak");
         Menu menu = new Menu(menuItems);
 
-        SharedQueue<String> orderQueue = new OrderQueue(numCustomersToServe);
-        SharedQueue<String> cookedFoodQueue = new CookedFoodQueue(numCustomersToServe);
+        SharedQueue<String> orderQueue = new OrderQueue(5);
+        SharedQueue<String> cookedFoodQueue = new CookedFoodQueue(5);
 
         Receptionist receptionist = new Receptionist(numTables);
 
         List<Thread> threads = new ArrayList<>();
 
+        for (int i = 0; i < numCustomersToServe; i++) {
+            Customer customer = new Customer(orderQueue, menu, receptionist);
+            threads.add(customer);
+            customer.start();
+        }
+
         for (int i = 0; i < numChefs; i++) {
             Chef chef = new Chef(orderQueue, cookedFoodQueue);
             threads.add(chef);
+            chef.start();
         }
 
         for (int i = 0; i < numWaiters; i++) {
             Waiter waiter = new Waiter(cookedFoodQueue);
             threads.add(waiter);
+            waiter.start();
         }
-
-        for (int i = 0; i < numCustomersToServe; i++) {
-            Customer customer = new Customer(orderQueue, menu, receptionist);
-            threads.add(customer);
-        }
-
-        threads.forEach(Thread::start);
 
         threads.forEach(thread -> {
             try {

@@ -15,7 +15,7 @@ public class Customer extends Thread {
     }
 
     @Override
-    public synchronized void run() {
+    public void run() {
         try {
             getAssignedTable();
             placeOrder();
@@ -41,7 +41,7 @@ public class Customer extends Thread {
         }
     }
 
-    private void waitForFood() throws InterruptedException {
+    privateq void waitForFood() throws InterruptedException {
         System.out.println(STR."Customer \{customerId} waiting for food.");
     }
 
