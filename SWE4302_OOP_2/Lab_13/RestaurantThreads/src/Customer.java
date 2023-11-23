@@ -41,7 +41,7 @@ public class Customer extends Thread {
         }
     }
 
-    privateq void waitForFood() throws InterruptedException {
+    private void waitForFood() throws InterruptedException {
         System.out.println(STR."Customer \{customerId} waiting for food.");
     }
 
