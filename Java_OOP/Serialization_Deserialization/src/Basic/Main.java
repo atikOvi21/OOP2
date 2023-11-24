@@ -2,7 +2,7 @@ package Basic;
 
 public class Main {
     public static void main(String[] args) {
-        String fileName = "src/Basic/serialized.txt";
+        String fileName = "src/Basic/serialized.ser";
         SerializationManager sm = new SerializationManager(fileName);
         Student student = new Student(1, "Hasin", "Dhaka");
         Student studentM = new Student(2, "Mahtab", "Uttara");
