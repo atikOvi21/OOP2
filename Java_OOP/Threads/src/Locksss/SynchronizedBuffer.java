@@ -6,7 +6,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class SynchronizedBuffer implements Buffer{
     private final Lock accessLock = new ReentrantLock();
-
     private final Condition canWrite = accessLock.newCondition();
     private final Condition canRead = accessLock.newCondition();
 
