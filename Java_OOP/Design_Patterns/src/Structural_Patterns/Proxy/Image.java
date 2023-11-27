@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Proxy;
+package Structural_Patterns.Proxy;
 
 public interface Image {
     void display();

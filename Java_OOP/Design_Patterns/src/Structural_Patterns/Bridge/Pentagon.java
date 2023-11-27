@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Bridge;
+package Structural_Patterns.Bridge;
 
 public class Pentagon extends Shape{
     public Pentagon(Color c) {

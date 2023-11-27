@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Flyweight;
+package Structural_Patterns.Flyweight;
 
 public class TextEditor {
     private final CharacterFlyweightFactory flyweightFactory = new CharacterFlyweightFactory();

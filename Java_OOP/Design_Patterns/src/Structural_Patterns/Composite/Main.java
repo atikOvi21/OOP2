@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Composite;
+package Structural_Patterns.Composite;
 
 public class Main {
     public static void main(String[] args) {

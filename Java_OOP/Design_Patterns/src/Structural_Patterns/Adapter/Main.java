@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Adapter;
+package Structural_Patterns.Adapter;
 
 public class Main {
     public static void main(String[] args) {

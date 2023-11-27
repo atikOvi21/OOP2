@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Composite;
+package Structural_Patterns.Composite;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Bridge;
+package Structural_Patterns.Bridge;
 
 public abstract class Shape {
     //Composition - implementor

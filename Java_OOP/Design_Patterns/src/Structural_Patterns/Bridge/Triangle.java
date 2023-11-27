@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Bridge;
+package Structural_Patterns.Bridge;
 
 public class Triangle extends Shape{
     public Triangle(Color c) {

@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Composite;
+package Structural_Patterns.Composite;
 
 public class Circle implements Shape{
     @Override

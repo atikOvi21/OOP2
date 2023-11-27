@@ -1,4 +1,4 @@
-package Behavioral_Patterns.Decorator;
+package Structural_Patterns.Decorator;
 
 public class BasicCar implements Car{
     @Override
