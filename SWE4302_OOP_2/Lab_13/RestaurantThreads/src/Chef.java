@@ -1,18 +1,17 @@
 import java.util.concurrent.BlockingQueue;
 
-public class Chef extends Thread{
-    private static int chefNumber = 1;
-    private final int chefId;
-    private final SharedQueue<String> orderQueue;
-    private final SharedQueue<String> cookedFoodQueue;
+public class Chef extends Thread {
 
-    public Chef(SharedQueue<String> orderQueue, SharedQueue<String> cookedFoodQueue){
-        this.chefId = chefNumber++;
-        this.orderQueue = orderQueue;
-        this.cookedFoodQueue = cookedFoodQueue;
-    }
+  private final SharedQueue<String> orderQueue;
+  private final SharedQueue<String> cookedFoodQueue;
 
-    @Override
+  public Chef(SharedQueue<String> orderQueue, SharedQueue<String> cookedFoodQueue) {
+    this.chefId = chefNumber++;
+    this.orderQueue = orderQueue;
+    this.cookedFoodQueue = cookedFoodQueue;
+  }
+
+  @Override
     public void run(){
         while(!Thread.interrupted()) {
             try {
