@@ -1,5 +1,3 @@
-package restaurantsimulationant;
-
 import static java.lang.Thread.sleep;
 import java.util.Queue;
 import java.util.Random;
@@ -8,9 +6,9 @@ import java.util.logging.Logger;
 
 public class Customer extends Thread {
     private static int nextCustomerId = 0;
-    final int customerId;
-    private Queue<Order> orderQueue;
-    private Receptionist receptionist;
+    public final int customerId;
+    private final Queue<Order> orderQueue;
+    private final Receptionist receptionist;
     Random random;
     int tableAssigned;
     private Order order;

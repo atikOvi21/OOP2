@@ -1,9 +1,7 @@
-package restaurantsimulationant;
-
 public class Order {
-    String meal;
-    Customer customer;
-    boolean isPrepared;
+    public String meal;
+    public Customer customer;
+    public boolean isPrepared;
 
     public Order(String meal, Customer customer) {
         this.meal = meal;

@@ -1,5 +1,3 @@
-package restaurantsimulationant;
-
 //import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -12,7 +10,7 @@ public class Receptionist extends Thread {
 
     private final int numTables;
     private int tableBooked = 0;
-    private Table tables[];
+    private final Table[] tables;
 
     Queue<Order> orderQueue = new LinkedList<>();
     Queue<Order> cookedFoodQueue = new LinkedList<>();
@@ -57,7 +55,7 @@ public class Receptionist extends Thread {
 
             } catch (InterruptedException ex) {
 
-                System.out.println(ex);
+                System.out.println(ex.getMessage());
             }
 
         }
@@ -88,7 +86,7 @@ public class Receptionist extends Thread {
     }
 
     public void customerLeaving(int tableNo) {
-        // realease table
+        // release table
         tables[tableNo].isBooked = false;
         tables[tableNo].customer = null;
         this.customerServed++;

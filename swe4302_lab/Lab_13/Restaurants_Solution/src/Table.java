@@ -1,8 +1,6 @@
-package restaurantsimulationant;
-
 public class Table {
-    boolean isBooked;
-    Customer customer;
+    public boolean isBooked;
+    public Customer customer;
 
     public Table() {
         isBooked = false;

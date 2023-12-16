@@ -1,5 +1,3 @@
-package restaurantsimulationant;
-
 import static java.lang.Thread.sleep;
 import java.util.Queue;
 import java.util.Random;
@@ -7,8 +5,8 @@ import java.util.Random;
 public class Waiter extends Thread {
     private static int nextWaiterId = 0;
     private final int waiterId;
-    private Queue<Order> cookedFoodQueue;
-    Chef chef;
+    private final Queue<Order> cookedFoodQueue;
+    public Chef chef;
     Random random;
 
     public Waiter(Queue<Order> cookedFoodQueue, Chef chef) {
@@ -31,7 +29,7 @@ public class Waiter extends Thread {
                 order.serveFood();
             }
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.printf(e.getMessage());
         }
     }
 }
