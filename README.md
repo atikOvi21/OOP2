@@ -1,6 +1,6 @@
 # Object Oriented Concepts II
 
-This repository contains the theory concepts and exercises for the course Object Oriented Concepts II (SWE4301) and the Lab tasks and solutions for the course Object Oriented Concepts II Lab (SWE4302) at Islamic University of Technology.
+This repository contains the theory concepts for the course Object Oriented Concepts II (SWE4301) and the Lab tasks-solutions for the course Object Oriented Concepts II Lab (SWE4302) at Islamic University of Technology.
 
 - Directory `java_oop_practice` contains Java code examples and exercises for different OOP concepts.
 
