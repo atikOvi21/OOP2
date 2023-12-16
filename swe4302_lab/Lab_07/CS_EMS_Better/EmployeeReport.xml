@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<EmployeeData>
+  <Employee>
+    <Name>John Doe</Name>
+    <BasicSalary>0</BasicSalary>
+    <Bonus>1000</Bonus>
+    <Designation>Engineer</Designation>
+    <DateOfJoining>2023-09-21T00:00:00</DateOfJoining>
+    <TotalSalary>9000</TotalSalary>
+  </Employee>
+  <Employee>
+    <Name>Jane Smith</Name>
+    <BasicSalary>0</BasicSalary>
+    <Bonus>1200</Bonus>
+    <Designation>Manager</Designation>
+    <DateOfJoining>2021-08-22T00:00:00</DateOfJoining>
+    <TotalSalary>9600</TotalSalary>
+  </Employee>
+  <Employee>
+    <Name>Bob</Name>
+    <BasicSalary>0</BasicSalary>
+    <Bonus>0</Bonus>
+    <Designation>Worker</Designation>
+    <DateOfJoining>2023-09-23T11:21:18.3767533+06:00</DateOfJoining>
+    <TotalSalary>18000</TotalSalary>
+  </Employee>
+</EmployeeData>
