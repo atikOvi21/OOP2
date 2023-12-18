@@ -26,7 +26,7 @@ public class Producer implements Runnable{
             }
         }
 
-        System.out.println(STR."LockProducer done producing.\nTerminating LockProducer.");
+        System.out.println("LockProducer done producing.\nTerminating LockProducer.");
 
     }
 }

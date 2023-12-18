@@ -1,5 +1,5 @@
 public class Traveller {
-    private String name;
+    private final String name;
 
     public Traveller(String name) {
         this.name = name;

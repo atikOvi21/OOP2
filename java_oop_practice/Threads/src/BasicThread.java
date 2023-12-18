@@ -5,15 +5,11 @@ public class BasicThread extends Thread {
         this.threadNumber = threadNumber;
     }
 
-    public int getThreadNumber() {
-        return threadNumber;
-    }
-
     @Override
     public void run() {
         for (int i = 0; i < 5; i++) {
-            System.out.println("Counting " + i + "...");
-            System.out.println("Thread number: " + threadNumber);
+            System.out.println(STR."Counting \{i}...");
+            System.out.println(STR."Thread number: \{threadNumber}");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

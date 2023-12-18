@@ -1,0 +1,18 @@
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class UnsyncMain {
+    public static void main(String[] args) {
+        // Producer Consumer without synchronization
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        Buffer sharedLocation = new UnsynchronizedBuffer();
+
+        Producer producer = new Producer(sharedLocation);
+        Consumer consumer = new Consumer(sharedLocation);
+
+        executorService.execute(producer);
+        executorService.execute(consumer);
+
+        executorService.shutdown();
+    }
+}
