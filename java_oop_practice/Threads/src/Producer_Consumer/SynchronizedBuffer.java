@@ -7,36 +7,37 @@ public class SynchronizedBuffer implements Buffer {
     @Override
     public synchronized void set(int value) throws InterruptedException {
         while (occupied) {
-            System.out.println(STR."LockProducer tries to write.");
-            displayState("Buffer full. LockProducer waits.");
+            System.out.println("Producer tries to write.");
+            displayState("Buffer full. Producer waits.");
             wait();
         }
 
         buffer = value;
         occupied = true;
-        displayState("LockProducer writes " + buffer);
+        displayState(STR."Producer writes \{buffer}");
         notifyAll();
     }
 
     @Override
-    public int get() throws InterruptedException {
+    public synchronized int get() throws InterruptedException {
         int readValue = 0;
 
         while (!occupied) {
-            System.out.println(STR."LockConsumer tries to read.");
-            displayState("Buffer empty. LockConsumer waits.");
+            System.out.println("Consumer tries to read.");
+            displayState("Buffer empty. Consumer waits.");
             wait();
         }
 
-        occupied = false;
+        //occupied = false;
         readValue = buffer;
-        displayState("LockConsumer reads " + readValue);
+        occupied = false;
+        displayState(STR."Consumer reads \{readValue}");
         notifyAll();
 
         return readValue;
     }
 
     public void displayState(String operation) {
-        System.out.printf("%-40s%d\t\t%b%n%n", operation, buffer, occupied);
+        System.out.printf("%-40s%d\t\t\t%b%n%n", operation, buffer, occupied);
     }
 }

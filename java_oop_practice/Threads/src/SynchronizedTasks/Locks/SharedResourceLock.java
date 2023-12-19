@@ -12,7 +12,7 @@ public class SharedResourceLock implements Runnable{
         lock.lock();
         try {
             counter++;
-            System.out.println("Incremented counter to: " + counter);
+            System.out.println(STR."Incremented counter to: \{counter}");
         } finally {
             lock.unlock();
         }

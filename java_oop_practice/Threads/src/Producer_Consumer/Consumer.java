@@ -13,13 +13,15 @@ public class Consumer implements Runnable{
 
     @Override
     public void run() {
+        int readValue = 0;
         int sum = 0;
 
         for (int count = 1; count <= 10; count++) {
             try {
                 Thread.sleep(generator.nextInt(3000));
-                sum += sharedLocation.get();
-                System.out.println(STR."Consumer reads \{sum}.");
+                readValue = sharedLocation.get();
+                sum += readValue;
+                System.out.println(STR."Consumer reads \{readValue}.");
             } catch (InterruptedException e) {
                 System.out.println(e.getMessage());
             }

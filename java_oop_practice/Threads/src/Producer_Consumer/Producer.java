@@ -20,13 +20,13 @@ public class Producer implements Runnable{
                 Thread.sleep(generator.nextInt(3000));
                 sharedLocation.set(count);
                 sum += count;
-                System.out.println(STR."Producer writes \{sum}.");
+                System.out.println(STR."Producer writes \{count}.");
             } catch (InterruptedException e) {
                 System.out.println(e.getMessage());
             }
         }
 
-        System.out.println("LockProducer done producing.\nTerminating LockProducer.");
+        System.out.println(STR."Producer writes total \{sum}.\nTerminating Producer.");
 
     }
 }

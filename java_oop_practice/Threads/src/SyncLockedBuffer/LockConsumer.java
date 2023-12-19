@@ -1,4 +1,4 @@
-package Locksss;
+package SyncLockedBuffer;
 
 import java.util.Random;
 import java.util.random.RandomGenerator;
@@ -13,18 +13,21 @@ public class LockConsumer implements Runnable{
 
     @Override
     public void run() {
+        int readValue = 0;
         int sum = 0;
 
         for (int count = 1; count <= 10; count++) {
             try {
                 Thread.sleep(generator.nextInt(3000));
-                sum += sharedLocation.get();
-                System.out.println(STR."Consumer reads \{sum}.");
+                readValue = sharedLocation.get();
+                sum += readValue;
+                System.out.println(STR."LockConsumer reads \{readValue}.");
+                System.out.println(STR."Sum of lockconsumer reads: \{sum}.");
             } catch (InterruptedException e) {
                 System.out.println(e.getMessage());
             }
         }
 
-        System.out.println(STR."Consumer reads totaling \{sum}.\nTerminating Consumer.");
+        System.out.println(STR."LockConsumer reads totaling \{sum}.\nTerminating LockConsumer.");
     }
 }

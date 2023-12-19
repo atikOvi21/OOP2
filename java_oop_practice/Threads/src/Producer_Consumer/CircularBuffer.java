@@ -17,7 +17,7 @@ public class CircularBuffer implements Buffer{
         buffer[writeIndex] = value;
         writeIndex = (writeIndex + 1) % buffer.length;
         ++occupiedCells;
-        displayState("LockProducer writes " + value);
+        displayState(STR."LockProducer writes \{value}");
         notifyAll();
     }
 
@@ -31,7 +31,7 @@ public class CircularBuffer implements Buffer{
         int readValue = buffer[readIndex];
         readIndex = (readIndex + 1) % buffer.length;
         --occupiedCells;
-        displayState("LockConsumer reads " + readValue);
+        displayState(STR."LockConsumer reads \{readValue}");
         notifyAll();
 
         return readValue;

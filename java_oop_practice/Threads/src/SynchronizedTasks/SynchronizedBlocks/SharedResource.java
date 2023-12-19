@@ -1,11 +1,11 @@
-package SynchronizedTasks.Blocks;
+package SynchronizedTasks.SynchronizedBlocks;
 
 public class SharedResource implements Runnable{
     private int counter = 0;
 
     private synchronized void increment() {
         counter++;
-        System.out.println("Incremented counter to: " + counter);
+        System.out.println(STR."Incremented counter to: \{counter}");
     }
 
     @Override

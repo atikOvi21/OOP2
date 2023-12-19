@@ -1,10 +1,10 @@
-package Locksss;
+package SyncLockedBuffer;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class SynchronizedBuffer implements Buffer{
+public class SynchronizedLockBuffer implements Buffer{
     private final Lock accessLock = new ReentrantLock();
     private final Condition canWrite = accessLock.newCondition();
     private final Condition canRead = accessLock.newCondition();
@@ -25,7 +25,7 @@ public class SynchronizedBuffer implements Buffer{
 
             buffer = value;
             occupied = true;
-            displayState("LockProducer writes " + buffer);
+            displayState(STR."LockProducer writes \{buffer}");
             canRead.signal();
         } finally {
             accessLock.unlock();
@@ -44,11 +44,12 @@ public class SynchronizedBuffer implements Buffer{
                 canRead.await();
             }
 
-            occupied = false;
+            //occupied = false;
             readValue = buffer;
-            displayState("LockConsumer reads " + readValue);
+            displayState(STR."LockConsumer reads \{readValue}");
             canWrite.signal();
         } finally {
+            occupied = false;
             accessLock.unlock();
         }
 
@@ -56,6 +57,6 @@ public class SynchronizedBuffer implements Buffer{
     }
 
     public void displayState(String operation) {
-        System.out.printf("%-40s%d\t\t%b%n%n", operation, buffer, occupied);
+        System.out.printf("%-40s%d\t\t\t%b%n%n", operation, buffer, occupied);
     }
 }

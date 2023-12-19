@@ -4,8 +4,8 @@ public class UnsynchronizedBuffer implements Buffer{
     private int buffer = -1;
     @Override
     public void set(int value) throws InterruptedException{
-        System.out.println(STR."Producer writes \{value}.");
         buffer = value;
+        System.out.println(STR."Producer writes \{buffer}.");
     }
 
     @Override

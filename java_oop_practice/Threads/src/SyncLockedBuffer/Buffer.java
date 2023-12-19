@@ -1,4 +1,4 @@
-package Locksss;
+package SyncLockedBuffer;
 
 public interface Buffer {
     public void set(int value) throws InterruptedException;
