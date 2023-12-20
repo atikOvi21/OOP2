@@ -1,4 +1,7 @@
-package GenericStack;
+package RawTypes;
+
+import GenericStack.StackEmptyException;
+import GenericStack.StackFullException;
 
 public class StackClass<T> {
     private final int size;
