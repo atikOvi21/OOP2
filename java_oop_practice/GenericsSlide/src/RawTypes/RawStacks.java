@@ -5,7 +5,7 @@ import GenericStack.StackEmptyException;
 import GenericStack.StackFullException;
 
 import java.util.Stack;
-
+@SuppressWarnings("unchecked")
 public class RawStacks {
     private final Double[] doubleElements = {1.1, 2.2, 3.3, 4.4, 5.5};
     private final Integer[] integerElements = {1, 2, 3, 4, 5};
